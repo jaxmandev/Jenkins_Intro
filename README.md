@@ -1,47 +1,48 @@
-# Pre-requisites
-Install the following programs:
-- Vagrant
-- VitualBox
-- Ruby
-- Bundler - manager for ruby app gems(formatted ruby programs and libs) manager
+## Jenkins vs Kubernetes: What are the differences?
 
-## Step by step set-up guide
-
-1. Clone repo
-2. In your terminal access the folder with cloned repo
+# Jenkins: 
 ```
-cd <foldername>
+- An extendable open source continuous integration server. 
+- In a nutshell Jenkins CI is the leading open-source continuous integration server. 
+- Built with Java, it provides over 300 plugins to support building and testing virtually any project; 
 ```
-3. Verify path correctness to ensure folder contains Vagrantfile
+# Kubernetes: 
 ```
-ls -a
-```
-4. Create and configure guest machine according to the Vagrantfile
-```
-vagrant up
+- Manage a cluster of Linux containers as a single system to accelerate Dev and simplify Ops. 
+- Kubernetes is an open source orchestration system for Docker containers. 
+- It handles scheduling onto nodes in a compute cluster and actively manages workloads to ensure that their state matches the users declared intentions.
 ```
 
-- The app is now running
-```
-ip: 192.168.10.100
-```
-- The databse is now running
-```
-p: 192.168.10.200
-```
-- Enter the virtual machine
-```
-vagrant ssh app
-```
-- Inside the irtual machine run
-```
-cd /home/ubuntu/app
-sudo npm install
-sudo npm start
-```
+- Jenkins and Kubernetes are primarily classified as "Continuous Integration" and "Container" tools respectively.
 
-## View website
-- Paste the following in your browser to view the pages
-1. 192.168.10.100:3000
-2. 192.168.10.100:3000/fibonacci/{index}
-2. 192.168.10.100:3000/posts
+Some of the features offered by Jenkins are:
+```
+- Easy installation
+- Easy configuration
+- Change set support
+```
+On the other hand, Kubernetes provides the following key features:
+```
+- Lightweight, simple and accessible
+- Built for a multi-cloud world, public, private or hybrid
+- Highly modular, designed so that all of its components are easily swappable
+```
+## Key factors
+### Jennkins:
+
+1. "Hosted internally", 
+2. "Free open source" and 
+3. "Great to build, deploy or launch anything async";
+
+### Kubernetes
+1. "Leading docker container management solution", 
+2. "Simple and powerful" and 
+3. "Open source" are the primary reasons why Kubernetes is favored.
+
+#### Stats
+Jenkins and Kubernetes are both open source tools. 
+- Kubernetes with 55K GitHub stars and 19.1K forks on GitHub appears to be more popular 
+- Jenkins with 13.3K GitHub stars and 5.48K GitHub forks
+
+- Jenkins is used by Facebook, Netflix, and Instacart.
+- Kubernetes is used by Google, Slack, and Shopify. 
